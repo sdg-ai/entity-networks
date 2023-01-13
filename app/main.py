@@ -84,7 +84,7 @@ def extract_entities_example():
 @app.post("/entities")
 def extract_entities(input_text: InputText):
     annotations = x.get_annotations(input_text.text)
-    return {"entity-networks": annotations}
+    return annotations
 
 @app.post("/batch-entities")
 def batch_extract_entities(trend_results: InputTrends):

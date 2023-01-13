@@ -16,10 +16,10 @@ user_key = os.environ.get('TRENDSCANNER_ENTITY_EXTRACTION_KEY')
 #nlp = spacy.load('en_core_web_lg')
 
 try:
-	nlp = spacy.load("en_core_web_sm")
+	nlp = spacy.load("en_core_web_lg")
 except: # If not present, we download
-	spacy.cli.download("en_core_web_sm")
-	nlp = spacy.load("en_core_web_sm")
+	spacy.cli.download("en_core_web_lg")
+	nlp = spacy.load("en_core_web_lg")
 
 
 headers = {
